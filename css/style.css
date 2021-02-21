@@ -1,0 +1,137 @@
+/**Google font link**/
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Rajdhani", sans-serif !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* The device with borders */
+.smartphone {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  margin: auto;
+  margin-top: 30px;
+  border: 16px black solid;
+  border-top-width: 60px;
+  border-bottom-width: 60px;
+  border-radius: 36px;
+}
+
+/* The horizontal line on the top of the device */
+.smartphone:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 5px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 10px;
+}
+
+/* The circle on the bottom of the device */
+.smartphone:after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  bottom: -65px;
+  transform: translate(-50%, -50%);
+  background: #333;
+  border-radius: 50%;
+}
+
+/* The screen (or content) of the device */
+.smartphone .content {
+  width: 100.5%;
+  height: 100%;
+  background: #2cbf45;
+}
+
+.balance-area {
+  background: #d80ed2;
+  padding: 10px;
+  border-radius: 0 0 100% 100%;
+  height: 190px;
+  box-shadow: 0px 3px 5px black;
+  color: white;
+}
+
+.balance p,
+.income p,
+.expensive p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: -6px;
+}
+
+#total-balance,
+#income-balance,
+#expensive-balance {
+  font-size: 25px;
+  font-weight: 600;
+}
+.dashboard {
+  background: #2cbf45;
+  height: 236px;
+  overflow-y: auto;
+  padding: 5px;
+  margin-top: 56px;
+}
+#add-income-field li,#add-expense-field li,#add-all-field li{
+  background-color: #6d6d6d63;
+  padding: 5px;
+  color: white;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid gray;
+}
+nav {
+  width: 95%;
+  position: absolute;
+  top: 200px;
+}
+.item-input {
+  position: absolute;
+  top: 92%;
+  width: 97%;
+}
+input[type="text" ],input[type="number"],button[type="button"]{
+  width: 33%;
+  float: left;
+  border: none;
+  font-size: 20px;
+}
+button[type="button"] {
+  background: #d80ed2;
+  color: white;
+  font-weight: 600;
+}
+.delete, .edit {
+  font-size: 22px;
+  cursor: pointer;
+}

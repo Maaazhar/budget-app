@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget-App | JavaScript</title>
+    <!--custom css link-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!--bootstrap css link-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--Font awesome-->
+    <script
+      src="https://kit.fontawesome.com/686509c997.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="smartphone">
+        <div class="content">
+          <div class="balance-area">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="balance text-center">
+                  <p>Main Balance</p>
+                  <span id="total-balance">0</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="income text-center">
+                  <p>Income</p>
+                  <span id="income-balance">0</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="expensive text-center">
+                  <p>Expense</p>
+                  <span id="expensive-balance">0</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dashboard">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button
+                  class="nav-link active"
+                  id="all-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#all"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-home"
+                  aria-selected="true"
+                >
+                  All
+                </button>
+                <button
+                  class="nav-link"
+                  id="income-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#income"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-profile"
+                  aria-selected="false"
+                >
+                  Income
+                </button>
+                <button
+                  class="nav-link"
+                  id="expensive-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#expensive"
+                  type="button"
+                  role="tab"
+                  aria-controls="nav-contact"
+                  aria-selected="false"
+                >
+                  Expense
+                </button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="all"
+                role="tabpanel"
+                aria-labelledby="all-tab"
+              >
+                <div id="add-all-field"></div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="income"
+                role="tabpanel"
+                aria-labelledby="income-tab"
+              >
+              <div id="add-income-field"></div>
+                <div class="item-input">
+                  <input type="text" autocomplete="off" placeholder="Source" id="income-title" class="form-control">
+                  <input type="number" autocomplete="off" placeholder="Amount" id="income-amount" class="form-control">
+                  <button type="button" id="income-btn" class="btn">ADD</button>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="expensive"
+                role="tabpanel"
+                aria-labelledby="expensive-tab"
+              >
+              <div id="add-expense-field"></div>
+                <div class="item-input">
+                  <input type="text" autocomplete="off" placeholder="Source" id="expense-title" class="form-control">
+                  <input type="number" autocomplete="off" placeholder="Amount" id="expense-amount" class="form-control">
+                  <button type="button" id="expense-btn" class="btn">ADD</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--custom js link-->
+    <script src="js/app.js"></script>
+    <!--bootstrap js link-->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
